@@ -58,3 +58,41 @@ DB_DATABASE=user_management
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
+
+Run Migrations
+```bash
+php artisan migrate
+# Optional: Seed database
+php artisan db:seed
+```
+
+### 3. Run the Application
+Backend Development Server
+
+```bash
+php artisan serve
+```
+
+### 4. API Documentation
+```
+Swagger UI: http://localhost:8000/api/documentation
+Generate docs: php artisan l5-swagger:generate
+```
+
+### 5. 🏗 Project Structure
+``` Core Structure
+project/
+├── app/                # Backend logic
+│   ├── DTO/            # Data Transfer Objects
+│   ├── Http/
+│   │   └── Controllers # API Controllers
+│   ├── Models/         # Eloquent Models
+│   ├── Repositories/   # Data access layer
+│   └── Services/       # Business logic
+├── public/             # Web root
+│   ├── index.html      # Frontend entry point
+│   └── js/
+│       └── app.js      # Frontend logic
+└── resources/          # Additional resources
+```
+
