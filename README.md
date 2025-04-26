@@ -39,3 +39,22 @@ A complete user management system with Laravel backend and Vanilla JavaScript fr
 ```bash
 git clone https://github.com/username/user-management-api.git
 cd user-management-api
+
+composer install
+cp .env.example .env
+php artisan key:generate
+
+```
+
+### 2. Database Configuration
+
+Create a new database
+Update .env with your credentials:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=user_management
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
