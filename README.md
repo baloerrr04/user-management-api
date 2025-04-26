@@ -96,3 +96,54 @@ project/
 └── resources/          # Additional resources
 ```
 
+### 6. 🧪 Testing
+
+Run Backend Tests
+```bash
+php artisan test
+# Specific test
+php artisan test --filter UserApiTest
+```
+
+### 7. 🖥 Frontend Configuration
+Update the API base URL in public/js/app.js:
+```
+const API_BASE_URL = 'http://localhost:8000/api/users';
+```
+
+🤝 Contributing
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+⚠ Troubleshooting
+Ensure all dependencies are installed
+
+Verify database connection
+
+Check browser console for frontend errors
+
+Use php artisan serve for backend development
+
+🔒 Security
+Input validation on both backend and frontend
+
+Use HTTPS in production
+
+Authentication will be considered for future versions
+
+📜 License
+MIT
+
+📧 Contact
+[Your Name] - your.email@example.com
+
+Project Link: https://github.com/username/user-management-api
+
+Built with ❤️ using Laravel & Vanilla JavaScript
